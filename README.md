@@ -1,5 +1,5 @@
 # Soal_UTS_AP
-Repositori ini berisi soal dan instruksi pengerjaan tugas ujian yang wajib dikerjakan secara berkelompok oleh mahasiswa peserta mata kuliah [Nama Mata Kuliah].
+Repositori ini berisi soal dan instruksi pengerjaan tugas ujian praktikum yang wajib dikerjakan secara berkelompok oleh mahasiswa Lab AP3 & AP4 Stambuk 2024.
 
 *📌 Instruksi Umum*
 1. Fork Repositori
