@@ -11,7 +11,7 @@ Repositori ini berisi soal dan instruksi pengerjaan tugas ujian praktikum yang w
    - Kode harus ditulis secara rapi, terstruktur, dan konsisten.
    - Di akhir setiap file kode, wajib dicantumkan penjelasan algoritma atau logika penyelesaian dalam bentuk komentar, dengan langkah-langkah sistematis dan mudah dipahami.
 4. Pengumpulan
-  - Tautan ke repositori hasil fork dikumpulkan oleh perwakilan kelompok melalui spreadsheet yang akan disediakan.
+   - Tautan ke repositori hasil fork dikumpulkan oleh perwakilan kelompok melalui spreadsheet yang akan disediakan.
 
 *📝 Penilaian*
 Penilaian akan didasarkan pada:
