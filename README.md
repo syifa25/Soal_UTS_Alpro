@@ -8,8 +8,8 @@ Repositori ini berisi soal dan instruksi pengerjaan tugas ujian praktikum yang w
 2. Kolaborator
    - Tambahkan semua anggota kelompok sebagai kolaborator di repositori hasil fork.
 3. Struktur dan Dokumentasi
-  - Kode harus ditulis secara rapi, terstruktur, dan konsisten.
-  - Di akhir setiap file kode, wajib dicantumkan penjelasan algoritma atau logika penyelesaian dalam bentuk komentar, dengan langkah-langkah sistematis dan mudah dipahami.
+   - Kode harus ditulis secara rapi, terstruktur, dan konsisten.
+   - Di akhir setiap file kode, wajib dicantumkan penjelasan algoritma atau logika penyelesaian dalam bentuk komentar, dengan langkah-langkah sistematis dan mudah dipahami.
 4. Pengumpulan
   - Tautan ke repositori hasil fork dikumpulkan oleh perwakilan kelompok melalui spreadsheet yang akan disediakan.
 
