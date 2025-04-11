@@ -13,7 +13,6 @@ Repositori ini berisi soal dan instruksi pengerjaan tugas ujian praktikum yang w
 4. Pengumpulan
    - Tautan ke repositori hasil fork dikumpulkan oleh perwakilan kelompok melalui spreadsheet yang akan disediakan.
 
-*📝 Penilaian*
 Penilaian akan didasarkan pada:
 1. Kelengkapan dan kejelasan penjelasan algoritma.
 2. Kontribusi nyata masing-masing anggota (commit history, pull request, dll).
