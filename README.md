@@ -1,7 +1,7 @@
 # Soal_UTS_AP
 Repositori ini berisi soal dan instruksi pengerjaan tugas ujian yang wajib dikerjakan secara berkelompok oleh mahasiswa peserta mata kuliah [Nama Mata Kuliah].
 
-##📌 Instruksi Umum
+*📌 Instruksi Umum*
 1. Fork Repositori
    - Setiap kelompok wajib melakukan fork repositori ini ke akun GitHub masing-masing.
    - Hanya satu fork per kelompok, dilakukan oleh perwakilan kelompok.
@@ -13,7 +13,7 @@ Repositori ini berisi soal dan instruksi pengerjaan tugas ujian yang wajib diker
 4. Pengumpulan
   - Tautan ke repositori hasil fork dikumpulkan oleh perwakilan kelompok melalui spreadsheet yang akan disediakan.
 
-##📝 Penilaian
+*📝 Penilaian*
 Penilaian akan didasarkan pada:
 1. Kelengkapan dan kejelasan penjelasan algoritma.
 2. Kontribusi nyata masing-masing anggota (commit history, pull request, dll).
