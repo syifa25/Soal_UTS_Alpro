@@ -21,3 +21,5 @@ Penilaian akan didasarkan pada:
 2. Kontribusi nyata masing-masing anggota (commit history, pull request, dll).
 3. Struktur dan kerapian penulisan kode.
 4. Efektivitas dan efisiensi algoritma yang digunakan.
+
+Deadline : Senin, 21 April 2025. Jam 12 Siang
