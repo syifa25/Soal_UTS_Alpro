@@ -22,5 +22,5 @@ Penilaian akan didasarkan pada:
 3. Struktur dan kerapian penulisan kode.
 4. Efektivitas dan efisiensi algoritma yang digunakan.
 
-Deadline : Senin, 21 April 2025. Jam 12 Siang
-Link Pengumpulan : https://docs.google.com/spreadsheets/d/17d-JcGcnqn3ZockbAFx6F0beAni7CsLK9QaJpRCt5dQ/edit?usp=sharing 
+- Deadline : Senin, 21 April 2025. Jam 12 Siang
+- Link Pengumpulan : https://docs.google.com/spreadsheets/d/17d-JcGcnqn3ZockbAFx6F0beAni7CsLK9QaJpRCt5dQ/edit?usp=sharing 
