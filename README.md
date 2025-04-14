@@ -1,5 +1,7 @@
 # Soal UTS Praktikum Algoritma dan Pemrograman
-Repositori ini berisi soal dan instruksi pengerjaan tugas ujian praktikum yang wajib dikerjakan secara berkelompok oleh mahasiswa Lab AP3 & AP4 Stambuk 2024.
+Repositori ini berisi soal dan instruksi pengerjaan tugas ujian praktikum yang wajib dikerjakan secara berkelompok oleh mahasiswa Lab AP3 & AP4 Stambuk 2024 Ilmu Komputer Universitas Sumatera Utara.
+
+Soal : https://drive.google.com/file/d/1MK05s-bXD_VjGLWgKmjWFX608ajQ8hHO/view?usp=sharing
 
 *📌 Instruksi Umum*
 1. Fork Repositori
