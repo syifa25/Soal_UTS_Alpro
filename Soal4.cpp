@@ -53,3 +53,19 @@ int main() {
   }
 
 }
+/*
+Algoritma atau logika penyelesaian program:
+1. Pertama, program membaca input jumlah babak (n) dan string hasil setiap babak (s).
+2. Lalu, dua variabel poin dan dua variabel streak diinisialisasi untuk masing-masing pemain.
+3. Program melakukan perulangan sebanyak jumlah babak.
+4. Di setiap babak:
+   - Jika pemain A menang ('A'), dia dapat 3 poin, streak A bertambah, dan streak B di-reset.
+   - Jika streak A mencapai 3 kali berturut-turut, bonus 2 poin ditambahkan, lalu streak A di-reset.
+   - Jika pemain B menang ('B'), poin dan logika yang sama berlaku untuk pemain B.
+   - Jika hasil seri ('C'), kedua pemain mendapat 1 poin, dan kedua streak di-reset.
+5. Setelah perulangan selesai, poin akhir pemain A dan B ditampilkan.
+6. Program membandingkan poin akhir:
+   - Jika poin A lebih besar, pemain A menang.
+   - Jika poin B lebih besar, pemain B menang.
+   - Jika poinnya sama, maka hasil pertandingan dinyatakan seri.
+*/

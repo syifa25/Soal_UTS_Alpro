@@ -51,3 +51,20 @@ int main (){
 
 
 }
+/*
+1. Masukkan nomor digitalnya.
+2. Panjang nomor dicek :
+     - Panjang 14 dan awalnya '65' => Kartu Nusantara
+     - Panjang 16 dan awalnya '77' atau '78' => Kartu Garuda
+     - Panjang 15 dan awalnya '91' => Kartu Merdeka
+  3. Jika nomor sesuai salah satu tipe, lanjut ke validasi menggunakan Algoritma Luhn:
+     a. Iterasi dari digit paling kanan ke kiri.
+     b. Hitung posisi dari kanan (posisi ke-1, ke-2, dst).
+     c. Jika digit berada di posisi genap:
+        - Kalikan dengan 2.
+        - Jika hasil > 9, jumlahkan digit-digitnya (contoh: 16 jadi 1+6 = 7).
+     d. Akumulasi semua nilai digit ke dalam `total`.
+  4. Setelah perulangan, jika total habis dibagi 10, maka kartu VALID.
+     Jika tidak, maka kartu TIDAK VALID.
+  5. Jika nomor kartu tidak sesuai tipe manapun, langsung diberi pesan tidak sesuai.
+*/
