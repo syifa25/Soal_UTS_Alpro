@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 int main() {
@@ -14,15 +13,15 @@ int main() {
     cin >> jamKeluar;
 
     
-    int jenis = kodeParkir / 100000000; // mengambil dua digit pertama sebagai kode parkir
+    int jenis = kodeParkir / 100000000;
 
     
-    int jamMasuk = (kodeParkir / 10000) % 10000;//mengambil digit 3 sampai 6 sebagai jam masuk
+    int jamMasuk = (kodeParkir / 10000) % 10000;
 
     
-    int lokasi = kodeParkir % 10000;//mengambil digit 7 sampai 10 sebagai lokasi parkir
+    int lokasi = kodeParkir % 10000;
 
-    // Hitung total menit masuk dan keluar
+    
     int jmJam = jamMasuk / 100;
     int jmMenit = jamMasuk % 100;
     int jkJam = jamKeluar / 100;
@@ -37,7 +36,7 @@ int main() {
     int durasiJam = durasiMenit / 60;
     if (durasiMenit % 60 != 0) durasiJam++;
 
-    //periksa termasuk ke kategori kendaraan apa
+    
     if (jenis == 10) {
         jenisKendaraan = "Mobil";
         if (durasiJam <= 1) biaya = 5000;
@@ -55,7 +54,7 @@ int main() {
         biaya = 0;
     }
 
-    // Tampilkan informasi
+   
     cout << "\n--- Ringkasan Parkir ---" << endl;
     cout << "Jenis Kendaraan : " << jenisKendaraan << endl;
     cout << "Jam Masuk       : ";
@@ -74,3 +73,15 @@ int main() {
 
     return 0;
 }
+
+
+
+// Penjelasan Program
+// 1. Pengguna menginput 10 digit kode parkir
+// 2. Program mengambil 2 digit pertama sebagai kode parkir untuk jenis kendaraan
+// 3. Digit 3 sampai 6 sebagai jam masuk dan 7 sampai 10 sebagai lokasi parkir
+// 4. Setelah itu durasi parkir dihitung dengan mengubah dulu jam masuk dan keluar ke bentuk menit
+// 5. Kemudian dihitung selisih nya dan diubah lagi ke bentuk jam
+// 6. kemudian jenis kendaraan ditentukan berdasarkan dua digit pertama
+// 7. hitung biaya berdasarkan jenis kendaraan
+// 8. Tampilkan hasil

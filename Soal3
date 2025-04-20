@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 int main() {
@@ -11,19 +10,19 @@ int main() {
     cin >> kodetransaksi;
 
     
-    int jenis = kodetransaksi / 1000000; //mengambil dua digit pertama sebagai kode transaksi untuk menentukan jenis hari
+    int jenis = kodetransaksi / 1000000; 
 
-    int kodeloyalitas = (kodetransaksi / 10000) % 100;//mengambil digiit ke 3 dan 4 untuk kode loyalitas pelanggan
+    int kodeloyalitas = (kodetransaksi / 10000) % 100;
     
-    int belanja = kodetransaksi % 10000;//mengambil diigit 5 sampai 8 sebagai jumlah belanja
-    
-    int jumlahbelanja = belanja * 100000;//mengubah jumlah belanja ke dalam kelipatan 100.000
+    int belanja = kodetransaksi % 10000;
+
+    int jumlahbelanja = belanja * 100000;
     
     string jenishari;
     string loyalitas;
     int poin;
 
-    //memeriksa kode transaksi termasuk ke jenis hari apa, termasuk loyalitas yang mana, dan poin yang didapat
+    
     if (jenis == 01) {
         jenishari = "Hari Kerja";
             if (kodeloyalitas == 01){
@@ -80,7 +79,7 @@ int main() {
     
     }
 
-    int totalpoin = belanja * poin;//menghiitung total poin yng didapat
+    int totalpoin = belanja * poin;
 
     cout << "Jenis Hari: " << jenishari << endl;
     cout << "Jenis Pelangganan: " << loyalitas << endl;
@@ -88,3 +87,12 @@ int main() {
     cout << "Total Poin: " << totalpoin << endl;
     return 0;
 }
+
+
+// Penjelasan Program
+// 1. Pengguna menginput 8 digit kode transaksi
+// 2. Program mengambil 2 digit pertama sebagai kode transaksi untuk jenis hari
+// 3. Digit 3 dan 4 sebagai kode loyalitas dan 5 sampai 8 sebagai jumlah belanja yang kemudian diubah ke kelipatan 100.000
+// 4. Setelah itu program memeriksa kode transaksi termasuk ke jenis hari apa, termasuk loyalitas yang mana, dan poin yang didapat
+// 5. Kemudian dihitung poin nya berdasarkan jenis hari dan loyalitasnya
+// 6. Tampilkan Hasil
