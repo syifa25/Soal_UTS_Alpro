@@ -26,6 +26,11 @@ int main() {
         poin_b += 3;
         streak_b++;
         streak_a = 0;  // reset streak A
+
+        if (streak_b == 3) {
+          poin_b += 2;
+          streak_b = 0;  // reset streak B
+      }
       }
       else if (s[i] == 'C') {
         poin_a += 1;
@@ -33,5 +38,18 @@ int main() {
         streak_a = 0;  // reset streak A
         streak_b = 0;  // reset streak B
     }
+    
+  }
+  cout << "Poin A: " << poin_a << endl;
+  cout << "Poin B: " << poin_b << endl;
+  if (poin_a > poin_b) {
+    cout << "Pemenangnya adalah pemain A" << endl;
+  }
+  else if (poin_b > poin_a) {
+      cout << "Pemenangnya adalah pemain B" << endl;
+  }
+  else {
+      cout << "Hasil pertandingan Seri!" << endl;
+  }
 
 }
