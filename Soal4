@@ -5,5 +5,33 @@ int main() {
     int n;
     string s;
     cin >> n >> s;
-    
+
+    int poin_a = 0, poin_b = 0;
+    int streak_a = 0, streak_b = 0;
+
+    for (int i = 0; i < n; i++) {
+      // Jika hasilnya A
+      if (s[i] == 'A') {
+          poin_a += 3;
+          streak_a++;
+          streak_b = 0;  // reset streak B
+
+          // Cek bonus jika A menang 3 kali berturut-turut
+          if (streak_a == 3) {
+              poin_a += 2;
+              streak_a = 0;  // reset streak A
+          }
+      }
+      else if (s[i] == 'B') {
+        poin_b += 3;
+        streak_b++;
+        streak_a = 0;  // reset streak A
+      }
+      else if (s[i] == 'C') {
+        poin_a += 1;
+        poin_b += 1;
+        streak_a = 0;  // reset streak A
+        streak_b = 0;  // reset streak B
+    }
+
 }
