@@ -74,3 +74,15 @@ int main() {
 
     return 0;
 }
+
+
+
+// Penjelasan Program
+// 1. Pengguna menginput 10 digit kode parkir
+// 2. Program mengambil 2 digit pertama sebagai kode parkir untuk jenis kendaraan
+// 3. Digit 3 sampai 6 sebagai jam masuk dan 7 sampai 10 sebagai lokasi parkir
+// 4. Setelah itu durasi parkir dihitung dengan mengubah dulu jam masuk dan keluar ke bentuk menit
+// 5. Kemudian dihitung selisih nya dan diubah lagi ke bentuk jam
+// 6. kemudian jenis kendaraan ditentukan berdasarkan dua digit pertama
+// 7. hitung biaya berdasarkan jenis kendaraan
+// 8. Tampilkan hasil
