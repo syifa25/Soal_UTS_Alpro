@@ -1,1 +1,90 @@
-//Kerjakan soal nomor 3 disini (Hapus komentar ini)
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    system ("cls");
+    int kodetransaksi;
+    int jamKeluar;
+
+    cout << "Masukkan kode transaksi (8 digit): ";
+    cin >> kodetransaksi;
+
+    
+    int jenis = kodetransaksi / 1000000; //mengambil dua digit pertama sebagai kode transaksi untuk menentukan jenis hari
+
+    int kodeloyalitas = (kodetransaksi / 10000) % 100;//mengambil digiit ke 3 dan 4 untuk kode loyalitas pelanggan
+    
+    int belanja = kodetransaksi % 10000;//mengambil diigit 5 sampai 8 sebagai jumlah belanja
+    
+    int jumlahbelanja = belanja * 100000;//mengubah jumlah belanja ke dalam kelipatan 100.000
+    
+    string jenishari;
+    string loyalitas;
+    int poin;
+
+    //memeriksa kode transaksi termasuk ke jenis hari apa, termasuk loyalitas yang mana, dan poin yang didapat
+    if (jenis == 01) {
+        jenishari = "Hari Kerja";
+            if (kodeloyalitas == 01){
+                loyalitas = "Pelanggan Biasa";
+                poin = 1;
+            }
+            else if (kodeloyalitas == 02){
+                loyalitas = "Silver";
+                poin = 2;
+            }
+            else if (kodeloyalitas == 03){
+                loyalitas = "Gold";
+                poin = 3;
+            }
+            else{
+                loyalitas = "Tidak Valid";
+            }
+    } else if (jenis == 02) {
+        jenishari = "Akhir Pekanr";
+        if (kodeloyalitas == 01){
+            loyalitas = "Pelanggan Biasa";
+            poin = 2;
+        }
+        else if (kodeloyalitas == 02){
+            loyalitas = "Silver";
+            poin = 3;
+        }
+        else if (kodeloyalitas == 03){
+            loyalitas = "Gold";
+            poin = 5;
+        }
+        else{
+            loyalitas = "Tidak Valid";
+        }
+    } else if (jenis == 03) {
+        jenishari = "Hari Libur Nasional";
+        if (kodeloyalitas == 01){
+            loyalitas = "Pelanggan Biasa";
+            poin = 3;
+        }
+        else if (kodeloyalitas == 02){
+            loyalitas = "Silver";
+            poin = 5;
+        }
+        else if (kodeloyalitas == 03){
+            loyalitas = "Gold";
+            poin = 7;
+        }
+        else{
+            loyalitas = "Tidak Valid";
+        }
+    } else {
+        jenishari = "Tidak diketahui";
+    
+    }
+
+    int totalpoin = belanja * poin;//menghiitung total poin yng didapat
+
+    cout << "Jenis Hari: " << jenishari << endl;
+    cout << "Jenis Pelangganan: " << loyalitas << endl;
+    cout << "Jumlah Belanja: " << jumlahbelanja << endl;
+    cout << "Total Poin: " << totalpoin << endl;
+    return 0;
+}
