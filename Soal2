@@ -37,10 +37,6 @@ int main() {
     int durasiJam = durasiMenit / 60;
     if (durasiMenit % 60 != 0) durasiJam++;
 
-    string jenisKendaraan;
-    int biaya = 0;
-
-
     //periksa termasuk ke kategori kendaraan apa
     if (jenis == 10) {
         jenisKendaraan = "Mobil";
@@ -59,16 +55,3 @@ int main() {
         biaya = 0;
     }
 
-    // Tampilkan informasi
-    cout << "\n--- Ringkasan Parkir ---" << endl;
-    cout << "Jenis Kendaraan : " << jenisKendaraan << endl;
-    cout << "Waktu Masuk       : " << setw(2) << setfill('0') << jmJam << ":"
-         << setw(2) << setfill('0') << jmMenit << endl;
-    cout << "Waktu Keluar      : " << setw(2) << setfill('0') << jkJam << ":"
-         << setw(2) << setfill('0') << jkMenit << endl;
-    cout << "Durasi Parkir   : " << durasiJam << " jam" << endl;
-    cout << "Lokasi Parkir   : " << lokasi << endl;
-    cout << "Total Biaya     : Rp " << biaya << endl;
-
-    return 0;
-}
