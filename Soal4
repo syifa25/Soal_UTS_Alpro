@@ -1,1 +1,9 @@
-//Kerjakan soal nomor 4 disini (Hapus komentar ini)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    string s;
+    cin >> n >> s;
+    
+}

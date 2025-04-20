@@ -3,14 +3,16 @@ using namespace std;
 
 int main (){
   string nomor;
-  bool valid = false;
+  bool valid = false; //untuk meriksa apakah nomor kartu cocok di salah satu tipe
   int panjang;
   int digit , posisiDariKanan;
   int total = 0;
   cout << "Masukkan nomor kartu digital :";
   cin >> nomor;
 
-  panjang = nomor.length();
+  panjang = nomor.length(); // HItung panjang dari nomor kartu
+
+  //Cek tipe kartu berdasarkan panjang dan digit awal 
   if ((panjang == 14) && (nomor[0] == '6') && (nomor[1] == '5')){
     cout << "Tipe kartu : Nusantara"<< endl;
     valid = true;
@@ -26,6 +28,7 @@ int main (){
     cout << "Nomor kartu tidak sesuai dengan nomor kartu manapun";
   }
 
+  //cek validasi nya
   if (valid){
     for (int i = panjang - 1; i >= 0; i--){
       digit = nomor[i] - '0'; //mengubah char jadi angka
