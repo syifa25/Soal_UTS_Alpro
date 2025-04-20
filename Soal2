@@ -1,1 +1,74 @@
-//Kerjakan soal nomor 2 disini (Hapus komentar ini)
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    system ("cls");
+    long long kodeParkir;
+    int jamKeluar;
+
+    cout << "Masukkan kode parkir (10 digit): ";
+    cin >> kodeParkir;
+
+    cout << "Masukkan jam keluar kendaraan (format HHMM): ";
+    cin >> jamKeluar;
+
+    
+    int jenis = kodeParkir / 100000000; // mengambil dua digit pertama sebagai kode parkir
+
+    
+    int jamMasuk = (kodeParkir / 10000) % 10000;//mengambil digit 3 sampai 6 sebagai jam masuk
+
+    
+    int lokasi = kodeParkir % 10000;//mengambil digit 7 sampai 10 sebagai lokasi parkir
+
+    // Hitung total menit masuk dan keluar
+    int jmJam = jamMasuk / 100;
+    int jmMenit = jamMasuk % 100;
+    int jkJam = jamKeluar / 100;
+    int jkMenit = jamKeluar % 100;
+
+    int totalMasuk = jmJam * 60 + jmMenit;
+    int totalKeluar = jkJam * 60 + jkMenit;
+
+    int durasiMenit = totalKeluar - totalMasuk;
+    if (durasiMenit <= 0) durasiMenit += 24 * 60;
+
+    int durasiJam = durasiMenit / 60;
+    if (durasiMenit % 60 != 0) durasiJam++;
+
+    string jenisKendaraan;
+    int biaya = 0;
+
+
+    //periksa termasuk ke kategori kendaraan apa
+    if (jenis == 10) {
+        jenisKendaraan = "Mobil";
+        if (durasiJam <= 1) biaya = 5000;
+        else biaya = 5000 + (durasiJam - 1) * 3000;
+    } else if (jenis == 20) {
+        jenisKendaraan = "Motor";
+        if (durasiJam <= 1) biaya = 3000;
+        else biaya = 3000 + (durasiJam - 1) * 2000;
+    } else if (jenis == 30) {
+        jenisKendaraan = "Bus";
+        if (durasiJam <= 1) biaya = 10000;
+        else biaya = 10000 + (durasiJam - 1) * 7000;
+    } else {
+        jenisKendaraan = "Tidak diketahui";
+        biaya = 0;
+    }
+
+    // Tampilkan informasi
+    cout << "\n--- Ringkasan Parkir ---" << endl;
+    cout << "Jenis Kendaraan : " << jenisKendaraan << endl;
+    cout << "Waktu Masuk       : " << setw(2) << setfill('0') << jmJam << ":"
+         << setw(2) << setfill('0') << jmMenit << endl;
+    cout << "Waktu Keluar      : " << setw(2) << setfill('0') << jkJam << ":"
+         << setw(2) << setfill('0') << jkMenit << endl;
+    cout << "Durasi Parkir   : " << durasiJam << " jam" << endl;
+    cout << "Lokasi Parkir   : " << lokasi << endl;
+    cout << "Total Biaya     : Rp " << biaya << endl;
+
+    return 0;
+}
