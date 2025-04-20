@@ -55,3 +55,22 @@ int main() {
         biaya = 0;
     }
 
+    // Tampilkan informasi
+    cout << "\n--- Ringkasan Parkir ---" << endl;
+    cout << "Jenis Kendaraan : " << jenisKendaraan << endl;
+    cout << "Jam Masuk       : ";
+    if (jmJam < 10) cout << "0";
+    cout << jmJam << ":";
+    if (jmMenit < 10) cout << "0";
+    cout << jmMenit << endl;
+    cout << "Jam Keluar      : ";
+    if (jkJam < 10) cout << "0";
+    cout << jkJam << ":";
+    if (jkMenit < 10) cout << "0";
+    cout << jkMenit << endl;
+    cout << "Durasi Parkir   : " << durasiJam << " jam" << endl;
+    cout << "Lokasi Parkir   : " << lokasi << endl;
+    cout << "Total Biaya     : Rp " << biaya << endl;
+
+    return 0;
+}
